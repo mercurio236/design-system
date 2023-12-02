@@ -1,6 +1,10 @@
 {
  "private": true,
- "workspaces":[
+ "workspaces": [
   "packages/*"
- ]
+ ],
+ "devDependencies": {
+  "@types/react": "^18.2.40",
+  "typescript": "^5.3.2"
+ }
 }
