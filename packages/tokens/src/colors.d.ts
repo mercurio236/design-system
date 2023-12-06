@@ -1,4 +1,4 @@
-declare const colors: {
+export declare const colors: {
   white: string
   black: string
   gray100: string
@@ -14,5 +14,4 @@ declare const colors: {
   ignite700: string
   ignite900: string
 }
-
-export { colors };
+// # sourceMappingURL=colors.d.ts.map
