@@ -6,7 +6,10 @@ interface TokensGridProps {
     hasremValue?: boolean
 }
 
+
+
 export function TokensGrid({tokens, hasremValue = false}:TokensGridProps){
+
     return(
         <table className='tokens-grid'>
             <thead>
