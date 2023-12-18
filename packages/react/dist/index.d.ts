@@ -232,4 +232,12 @@ interface AvatarProps extends ComponentProps<typeof AvatarImage> {
 }
 declare function Avatar(props: AvatarProps): react_jsx_runtime.JSX.Element;
 
-export { Avatar, type AvatarProps, Box, type BoxProps, Heading, type HeadingProps, Text, type TextProps };
+declare const Button: _stitches_react_types_styled_component.StyledComponent<"button", {
+    variant?: "primary" | "secundary" | "tertiary" | undefined;
+    size?: "sm" | "md" | undefined;
+}, {}, _stitches_react_types_css_util.CSS<{}, {}, {}, {}>>;
+interface ButtonProps extends ComponentProps<typeof Button> {
+    as?: ElementType;
+}
+
+export { Avatar, type AvatarProps, Box, type BoxProps, Button, type ButtonProps, Heading, type HeadingProps, Text, type TextProps };
