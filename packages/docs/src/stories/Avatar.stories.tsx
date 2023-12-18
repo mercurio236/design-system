@@ -9,6 +9,13 @@ export default {
    src:'https://github.com/mercurio236.png',
    alt:'Arley Souto'
   },
+  argTypes:{
+    children:{
+      control:{
+        type: 'text'
+      }
+    }
+  }
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
