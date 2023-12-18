@@ -1,5 +1,5 @@
 import { join, dirname } from "path";
-import type { StorybookViteConfig } from '@storybook/builder-vite';
+
 
 /**
  * This function is used to resolve the absolute path of a package.
@@ -10,7 +10,7 @@ function getAbsolutePath(value) {
 }
 
 /** @type { import('@storybook/react-vite').StorybookConfig } */
-const config: StorybookViteConfig = {
+const config = {
   stories: [
     "../src/pages/**/*.mdx",
     "../src/stories/**/*.stories.tsx",
