@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 14 # Ajustei a versão para 14, mas altere para a versão que você precisa
+          node-version: 16
 
       - run: npm ci
 
