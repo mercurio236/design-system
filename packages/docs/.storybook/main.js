@@ -1,5 +1,6 @@
 import { join, dirname } from "path";
 
+
 /**
  * This function is used to resolve the absolute path of a package.
  * It is needed in projects that use Yarn PnP or are set up within a monorepo.
@@ -28,7 +29,7 @@ const config = {
     autodocs: "tag",
   },
 
-  viteFinal:(config, {configType}) =>{
+   viteFinal: async (config, {configType}) =>{
     if(configType === 'PRODUCTION'){
       config.base = '/design-system/'
     }
