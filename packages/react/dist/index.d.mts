@@ -216,4 +216,11 @@ interface TextProps extends ComponentProps<typeof Text> {
     as?: ElementType;
 }
 
-export { Box, type BoxProps, Text, type TextProps };
+declare const Heading: _stitches_react_types_styled_component.StyledComponent<"h2", {
+    size?: "sm" | "md" | "lg" | "2xl" | "4xl" | "5xl" | "6xl" | "3xl" | undefined;
+}, {}, _stitches_react_types_css_util.CSS<{}, {}, {}, {}>>;
+interface HeadingProps extends ComponentProps<typeof Heading> {
+    as?: ElementType;
+}
+
+export { Box, type BoxProps, Heading, type HeadingProps, Text, type TextProps };
