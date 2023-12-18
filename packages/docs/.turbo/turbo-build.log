@@ -7,7 +7,7 @@
 info => Cleaning outputDir: /storybook-static
 info => Loading presets
 info => Building manager..
-info => Manager built (102 ms)
+info => Manager built (93 ms)
 info => Building preview..
 info => Copying static files: /home/arleysouto/Documents/GitHub/design-system/node_modules/@storybook/manager/static at /home/arleysouto/Documents/GitHub/design-system/packages/docs/storybook-static/sb-common-assets
 info => Copying static files: /home/arleysouto/Documents/GitHub/design-system/packages/assets at /home/arleysouto/Documents/GitHub/design-system/packages/docs/storybook-static/
@@ -47,8 +47,8 @@ storybook-static/assets/home.stories-6af9dad4.js                  1.11 kB │ gz
 storybook-static/assets/entry-preview-658d6e4c.js                 1.15 kB │ gzip:   0.67 kB
 storybook-static/assets/Text.stories-b6d82d55.js                  1.22 kB │ gzip:   0.64 kB
 storybook-static/assets/radii.stories-421088e9.js                 1.24 kB │ gzip:   0.66 kB
-storybook-static/assets/TextInput.stories-3f91e906.js             1.26 kB │ gzip:   0.56 kB
 storybook-static/assets/space.stories-a0055e9d.js                 1.26 kB │ gzip:   0.67 kB
+storybook-static/assets/TextInput.stories-3f91e906.js             1.26 kB │ gzip:   0.56 kB
 storybook-static/assets/line-hights.stories-b5e7ceb0.js           1.27 kB │ gzip:   0.66 kB
 storybook-static/assets/fonts.stories-e9da7277.js                 1.27 kB │ gzip:   0.67 kB
 storybook-static/assets/Heading.stories-e5bd74da.js               1.28 kB │ gzip:   0.62 kB
@@ -77,12 +77,6 @@ storybook-static/assets/formatter-SWP5E3XI-891d0413.js          601.63 kB │ gz
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-✓ built in 8.43s
-info => Preview built (9.42 s)
+✓ built in 8.58s
+info => Preview built (9.57 s)
 info => Output directory: /home/arleysouto/Documents/GitHub/design-system/packages/docs/storybook-static
-
-attention => Storybook now collects completely anonymous telemetry regarding usage.
-This information is used to shape Storybook's roadmap and prioritize features.
-You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-https://storybook.js.org/telemetry
-
