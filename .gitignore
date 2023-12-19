@@ -6,7 +6,8 @@ node_modules
 /.pnp
 .pnp.js
 .turbo
-storybook-static
+/storybook-static
+dist
 
 # testing
 /coverage
