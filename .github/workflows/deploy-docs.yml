@@ -12,10 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        if: success()
-        with:
-          build_dir: storybook-static
-          jekyll: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -31,7 +27,7 @@ jobs:
 
       - name: Deploy storybook
         working-directory: ./packages/docs
-        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+        run: npm run deploy-storybook -- --ci 
 
       
         env:
