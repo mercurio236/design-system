@@ -27,9 +27,9 @@ const config = {
   core:{
     builder: '@storybook/builder-vite'
   },
-  typescript: {
+  /* typescript: {
     reactDocgen: 'react-docgen', 
-  },
+  }, */
 
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
