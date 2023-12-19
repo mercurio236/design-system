@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        if: success()
+        with:
+          build_dir: storybook-static
+          jekyll: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -22,12 +26,8 @@ jobs:
 
       - run: npm run build
 
-      - name: Publish Storybook to GH Pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-          build_dir: storybook-static
-          jekyll: false
+        
+        
 
       - name: Deploy storybook
         working-directory: ./packages/docs
