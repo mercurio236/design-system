@@ -30,7 +30,7 @@ jobs:
         if: success()
         uses: crazy-max/ghaction-github-pages@v3
         with:
-          target_branch: gh-pages
+          target_branch: design-system
           build_dir: storybook-static
           jekyll: false
         env:
