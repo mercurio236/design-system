@@ -7,10 +7,11 @@
 info => Cleaning outputDir: /storybook-static
 info => Loading presets
 info => Building manager..
-info => Manager built (92 ms)
+info => Manager built (94 ms)
 info => Building preview..
 info => Copying static files: /home/arleysouto/Documents/GitHub/design-system/node_modules/@storybook/manager/static at /home/arleysouto/Documents/GitHub/design-system/packages/docs/storybook-static/sb-common-assets
 [33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+(!) "base" option should start with a slash.
 vite v4.5.1 building for production...
 
 ./sb-common-assets/fonts.css doesn't exist at build time, it will remain unchanged to be resolved at runtime
@@ -33,8 +34,8 @@ storybook-static/assets/syntaxhighlighter-V7JZZA35-1c1c7880.js    0.49 kB │ gz
 storybook-static/assets/preview-6cba9e07.js                       0.61 kB │ gzip:   0.35 kB
 storybook-static/assets/preview-73104b77.js                       0.64 kB │ gzip:   0.44 kB
 storybook-static/assets/Box.stories-0e2936f8.js                   0.66 kB │ gzip:   0.39 kB
-storybook-static/assets/Checkbox.stories-cae77f77.js              0.69 kB │ gzip:   0.44 kB
 storybook-static/assets/_commonjsHelpers-de833af9.js              0.69 kB │ gzip:   0.38 kB
+storybook-static/assets/Checkbox.stories-cae77f77.js              0.69 kB │ gzip:   0.44 kB
 storybook-static/assets/index-356e4a49.js                         0.77 kB │ gzip:   0.47 kB
 storybook-static/assets/TokensGrid-652b10fc.js                    0.81 kB │ gzip:   0.42 kB
 storybook-static/assets/preview-0ef86afd.js                       0.86 kB │ gzip:   0.55 kB
@@ -78,6 +79,6 @@ storybook-static/assets/formatter-SWP5E3XI-dd0f950b.js          601.68 kB │ gz
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-✓ built in 9.21s
+✓ built in 9.08s
 info => Preview built (10 s)
 info => Output directory: /home/arleysouto/Documents/GitHub/design-system/packages/docs/storybook-static
