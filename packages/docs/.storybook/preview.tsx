@@ -1,9 +1,12 @@
-/** @type { import('@storybook/react').Preview } */
-import { themes } from '@storybook/theming'
-import React from 'react'
+import { initialize, mswDecorator } from 'msw-storybook-addon';
 
+/** @type { import('@storybook/react').Preview } */
+
+
+initialize();
 
 const preview = {
+  decorators: [mswDecorator],
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
@@ -12,9 +15,6 @@ const preview = {
         date: /Date$/i,
       },
     },
-  },
-  docs:{
-    theme: themes.dark
   }
 }
 
