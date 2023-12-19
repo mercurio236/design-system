@@ -1,5 +1,6 @@
 name: Deploy docs
 
+
 on:
   push:
     branches:
@@ -11,14 +12,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          jekyll: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          
 
       - run: npm ci
 
@@ -27,6 +25,13 @@ jobs:
       - name: Deploy storybook
         working-directory: ./packages/docs
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
-        
+
+      - name: Publish Storybook to GH Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: gh-pages
+          build_dir: storybook-static
+          jekyll: false
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
