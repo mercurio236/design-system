@@ -1,6 +1,5 @@
 name: Deploy docs
 
-
 on:
   push:
     branches:
@@ -22,17 +21,12 @@ jobs:
 
       - run: npm run build
 
-        
-        
-
       - name: Deploy storybook
         uses: crazy-max/ghaction-github-pages@v3
         if: success()
         with:
-          jekyll: false
           working-directory: ./packages/docs
-          run: npm run deploy-storybook -- --ci 
+          run: npm run deploy-storybook -- --ci
 
-      
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
