@@ -11,12 +11,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          jekyll: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 16
-          jekyll: false
+          node-version: 18
+          
 
       - run: npm ci
 
@@ -25,5 +27,6 @@ jobs:
       - name: Deploy storybook
         working-directory: ./packages/docs
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+        
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
