@@ -27,10 +27,13 @@ const config = {
   core:{
     builder: '@storybook/builder-vite'
   },
+  typescript: {
+    reactDocgen: 'react-docgen', 
+  },
 
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/design-system/'
+      config.base = '/mercurio236/design-system/'
     }
 
     return config
