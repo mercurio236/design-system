@@ -1,0 +1,2 @@
+import{A as t}from"./index.71b33a35.js";import"./index.35950d07.js";import"./iframe.8e994729.js";import"./index.bf7e2597.js";import"./jsx-runtime.001856ed.js";const e={title:"Data display/Avatar",component:t,args:{src:"https://github.com/mercurio236.png",alt:"Arley Souto"},argTypes:{children:{control:{type:"text"}}}},c={},p={args:{src:"undefined"}},m=["Primary","WithFallback"];export{c as Primary,p as WithFallback,m as __namedExportsOrder,e as default};
+//# sourceMappingURL=Avatar.stories.4620a108.js.map

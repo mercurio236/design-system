@@ -1,0 +1,2 @@
+import{b as e,B as s,T as a}from"./index.71b33a35.js";import{a as t,j as o}from"./jsx-runtime.001856ed.js";import"./index.35950d07.js";import"./iframe.8e994729.js";import"./index.bf7e2597.js";const l={title:"Form/Text Area",component:e,args:{},decorators:[r=>t(s,{children:[o(a,{children:"Observations"}),r()]})]},p={args:{placeholder:"Add any observation"}},x={args:{disabled:!0}},b=["Primary","Disabled"];export{x as Disabled,p as Primary,b as __namedExportsOrder,l as default};
+//# sourceMappingURL=TextArea.stories.ab5c884c.js.map
