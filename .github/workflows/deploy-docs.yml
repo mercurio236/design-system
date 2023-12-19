@@ -22,15 +22,17 @@ jobs:
 
       - run: npm run build
 
-      - name: Deploy storybook
-        working-directory: ./packages/docs
-        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
-
       - name: Publish Storybook to GH Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v3
         with:
           build_dir: storybook-static
           jekyll: false
+
+      - name: Deploy storybook
+        working-directory: ./packages/docs
+        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+
+      
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
