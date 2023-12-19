@@ -26,8 +26,13 @@ jobs:
         
 
       - name: Deploy storybook
-        working-directory: ./packages/docs
-        run: npm run deploy-storybook -- --ci 
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: gh-pages
+          build_dir: storybook-static
+          jekyll: false
+          working-directory: ./packages/docs
+          run: npm run deploy-storybook -- --ci 
 
       
         env:
