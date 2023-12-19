@@ -29,8 +29,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v3
         if: success()
         with:
-          target_branch: gh-pages
-          build_dir: storybook-static
           jekyll: false
           working-directory: ./packages/docs
           run: npm run deploy-storybook -- --ci 
