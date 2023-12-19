@@ -7,7 +7,7 @@
 info => Cleaning outputDir: /storybook-static
 info => Loading presets
 info => Building manager..
-info => Manager built (93 ms)
+info => Manager built (103 ms)
 info => Building preview..
 info => Copying static files: /home/arleysouto/Documents/GitHub/design-system/node_modules/@storybook/manager/static at /home/arleysouto/Documents/GitHub/design-system/packages/docs/storybook-static/sb-common-assets
 [33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
@@ -76,6 +76,6 @@ storybook-static/assets/formatter-SWP5E3XI-d1265750.js          601.63 kB │ gz
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-✓ built in 7.43s
-info => Preview built (8.19 s)
+✓ built in 7.99s
+info => Preview built (8.76 s)
 info => Output directory: /home/arleysouto/Documents/GitHub/design-system/packages/docs/storybook-static

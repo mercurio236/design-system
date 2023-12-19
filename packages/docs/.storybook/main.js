@@ -33,7 +33,7 @@ const config = {
 
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/mercurio236/design-system/'
+      config.base = '/design-system/'
     }
 
     return config
