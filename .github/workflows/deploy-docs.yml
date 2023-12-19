@@ -35,4 +35,4 @@ jobs:
 
       
         env:
-          GH_TOKEN: ${{ github.actor }}:${{ secrets.DESIGN_SYSTEM }}
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
